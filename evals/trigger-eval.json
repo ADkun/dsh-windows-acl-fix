@@ -1,0 +1,38 @@
+{
+  "skill": "dsh-windows-acl-fix",
+  "note": "20 条应触发 + 10 条不应触发；改 description 后复跑，正例看路由、负例看是否过触发。",
+  "items": [
+    "run_code 报 sandbox-local: windows-acl workspace grant failed 怎么办",
+    "SetNamedSecurityInfoW failed (Win32 5) grantWrite 修复",
+    "DSH 工作区读写被拒但目录能列出来，咋弄",
+    "pwsh 工具也报 grantWrite 错误，是不是权限问题",
+    "D:\\dsh\\plugins\\dsh-tool-manager 没有 WRITE_OWNER 怎么补",
+    "帮我看看 DSH 沙箱 ACL 哪里不对",
+    "agent 启动失败，提示 workspace grant failed",
+    "Windows 上 DSH 文件沙箱报 Win32 5",
+    "工作区根目录 FullControl 怎么加给当前用户",
+    "S-1-5-18 能不能拿来修 DSH 权限",
+    "icacls 怎么给 dsh 工作区授权",
+    "为什么父目录有 WO 子目录却没有",
+    "修复 DSH ACL 后怎么验证 confined 恢复",
+    "Get-Acl 在 PowerShell 5.1 找不到",
+    "DSH 沙箱 low label 写不进去",
+    "grantWrite(D:\\...) 这个错误根因是什么",
+    "danger-full-access 还是报 windows-acl grant failed",
+    "怎么生成 ACL 回滚命令",
+    "workspace-write 沙箱启动失败，检查权限",
+    "当前用户怎么获得 WRITE_OWNER"
+  ],
+  "negative_items": [
+    "Linux 上 chmod 777 怎么修",
+    "macOS 文件权限被拒怎么办",
+    "文件被占用无法删除",
+    "网络连接超时导致 DSH 失败",
+    "DSH 预期 confinement 拒绝：workspace 外写文件",
+    "read-only 工作区里写入被拒",
+    "普通 icacls 给共享目录授权，与 DSH 无关",
+    "Node.js EACCES 但不是 DSH 沙箱",
+    "Git 仓库文件权限正常但 merge 冲突",
+    "PowerShell Get-Command 找不到命令"
+  ]
+}
